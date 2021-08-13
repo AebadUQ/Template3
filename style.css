@@ -1,0 +1,798 @@
+.HelloMain {
+  max-width: 100%;
+  /* border: 2px solid black; */
+  /* background-image: url("https://betting.cdnppb.net/horse-racing/Doncaster%20Races%20-%201280.956x538.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+}
+.Hello {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 900px;
+  /* border: 2px solid red; */
+  /* background-color: #ccc; */
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 800px) {
+  .Hello {
+    flex-direction: column;
+  }
+  .h1,
+  h2 {
+    margin: 0 auto;
+  }
+}
+.h1 {
+  position: relative;
+  flex: 50%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 2rem;
+  /* border: 2px solid blue; */
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.h2 {
+  flex: 50%;
+  padding: 2rem;
+  /* padding-right: 4rem; */
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.bobo {
+  font-size: small;
+  color: black;
+  font-weight: 300;
+}
+.Hello_para {
+  color: #00b2ee;
+  font-family: Arial, Helvetica, sans-serif;
+
+  padding: 0.5rem;
+}
+
+.containerTT {
+  max-width: 100%;
+  background: white;
+  border-radius: 10px;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.containerTT h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.containerTT form .row {
+  display: flex;
+
+  padding: 2rem;
+}
+
+.containerTT form .row .field {
+  width: 100%;
+  position: relative;
+  margin: 0 30px 30px 0;
+}
+
+.containerTT form .row .field input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid rgba(235, 228, 228, 0.959);
+  outline: none;
+  font-size: 16px;
+}
+
+.containerTT form .row .message input {
+  height: 60px;
+}
+
+.containerTT form .row .field input:focus {
+  border-color: #00688b;
+}
+
+.containerTT form .row .field label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+
+  transition: 0.3s;
+}
+
+.containerTT form .row .field input:focus ~ label,
+.containerTT form .row .field input:valid ~ label {
+  transform: translateY(-23px);
+  color: #00688b;
+}
+
+.containerTT form input[type="submit"] {
+  padding: 7px 20px;
+  outline: none;
+  border-radius: 15px;
+  background: #0ead69;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .containerTT {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerTT {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .containerTT {
+    width: 100%;
+  }
+  .containerTT form .row {
+    display: block;
+  }
+}
+/* #0ead69
+#00688b */
+.bobby {
+  background-color: #00b2ee;
+  color: white;
+  border-style: none;
+
+  font-size: 0.6rem;
+  float: right;
+
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.bobby {
+  background-color: #00b2ee;
+  color: white;
+  border: 2px solid #00b2ee;
+  border-radius: 0.25rem;
+}
+
+.bobby:hover {
+  background-color: white;
+  color: #00b2ee;
+}
+/* ============================== Text + Form  ENDS============= */
+
+/* =============================== Cards ============== */
+
+.MainBox {
+  margin-top: 3rem;
+  max-width: 100%;
+
+  /* background-image: url("https://betting.cdnppb.net/horse-racing/Doncaster%20Races%20-%201280.956x538.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+}
+.Main {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 900px;
+
+  /* background-color: #ccc; */
+  border-radius: 3px;
+  padding-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 800px) {
+  .c1 {
+    max-width: 100%;
+  }
+  .Main {
+    flex-direction: column;
+  }
+}
+.c1 {
+  position: relative;
+  flex: 50%;
+  transition: 0.3s;
+
+  position: relative;
+  display: inline-block;
+}
+
+.c2 {
+  flex: 20%;
+
+  text-align: right;
+}
+/* @media (max-width: 800px) {
+  .c2 {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+} */
+.more {
+  font-size: medium;
+  color: #00b2ee;
+  font-weight: bold;
+}
+.more:hover {
+  color: #00688b;
+}
+.MainBox2 {
+  max-width: 100%;
+
+  /* background-image: url("https://betting.cdnppb.net/horse-racing/Doncaster%20Races%20-%201280.956x538.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+}
+.Main2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 900px;
+
+  /* background-color: #ccc; */
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 800px) {
+  .Main2 {
+    flex-direction: column;
+  }
+}
+.m1 {
+  padding: 1rem;
+  flex: 40%;
+}
+
+.m2 {
+  padding: 1rem;
+  flex: 40%;
+}
+.m3 {
+  padding: 1rem;
+  flex: 40%;
+}
+
+.img-holder {
+  min-height: 350px;
+  max-width: 270px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 0px;
+  border-radius: 1rem;
+}
+
+.img-holder h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: white;
+  color: black;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 15%;
+  margin: 0;
+  border-radius: 0.15rem;
+  text-align: center;
+}
+
+.img-preview {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  min-height: 350px;
+  max-width: 270px;
+  border-radius: 0.5rem;
+}
+.img-preview:hover {
+  opacity: 0.9;
+}
+
+.img-container {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background-position: center top;
+}
+/* =======================Cards ends============== */
+
+.hamburger {
+  display: none;
+  color: #018dca;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  /* border: 2px solid red; */
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #018dca !important;
+}
+
+header {
+  padding-top: 50px;
+  position: relative;
+}
+
+nav,
+.left-nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #c9ebfb !important;
+}
+
+/*.navbar-inverse .navbar-nav>li>a{
+	color: #000 !important;
+}*/
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #000 !important;
+}
+
+.navbar-toggle {
+  border-color: #ffffff !important;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 !important;
+}
+
+.left-nav-bar .logo img {
+  width: 150px;
+  margin-right: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: #717171 !important;
+  font-size: 15px;
+  font-family: arial;
+  padding: 0 !important;
+}
+
+.right-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-nav-bar button {
+  border: none;
+  outline: none;
+  color: #018dca;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #018dca;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.5s;
+
+  margin-top: -20px;
+}
+
+.right-nav-bar button:hover {
+  color: #ffffff;
+  background-color: #018dca;
+  border: 1px solid #ffffff;
+}
+
+.container .split-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 40px 0;
+}
+
+.container .split-sec .img-sec img {
+  width: 400px;
+}
+
+.container .cont-sec {
+  padding-right: 120px;
+}
+
+.container .cont-sec h1 {
+  font-size: 43px;
+  font-family: arial;
+  font-weight: 600;
+  color: #000000;
+}
+
+.container .cont-sec p {
+  color: #717171;
+  font-size: 16px;
+  line-height: 30px;
+  padding-right: 40px;
+  font-family: arial;
+}
+
+.container .cont-sec .hr {
+  height: 3px;
+  background: #018dca;
+  width: 60px;
+  margin: 20px 0 35px;
+}
+
+.container .cont-sec .btn {
+  text-align: right !important;
+  display: block;
+}
+
+.container .cont-sec .btn button {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #00b2ee;
+  border: 1px solid #00b2ee;
+  padding: 16px 32px;
+  font-size: 14px;
+  /*font-weight: bold;*/
+  transition: 0.5s;
+  margin-top: 40px;
+}
+
+.container .cont-sec .btn button:hover {
+  color: #018dca;
+  background-color: #ffffff;
+  border: 1px solid #018dca;
+}
+
+.bg-box {
+  height: 540px;
+  background: #018dca;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: 10%;
+}
+
+@media screen and (max-width: 765px) and (min-width: 481px) {
+  body {
+  }
+
+  .bg-box {
+    right: 0px;
+  }
+
+  .container .split-sec .img-sec img {
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  .container .cont-sec {
+    padding-right: 50px;
+  }
+
+  .container .cont-sec h1 {
+    font-size: 33px;
+  }
+  .container .cont-sec p {
+    padding-right: 0px;
+  }
+
+  .left-nav-bar ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    padding-right: 50px;
+  }
+
+  .bg-box {
+    width: 300px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+
+  ul li a {
+    margin: 0 0 20px;
+    /*text-align: center;*/
+    font-size: 18px;
+  }
+  .right-nav-bar button {
+    padding: 10px 40px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+  }
+
+  /* nav ul{
+		display: none;
+	} */
+
+  .bg-box {
+    display: none;
+  }
+
+  .container .split-sec {
+    flex-direction: column;
+  }
+
+  .container .split-sec .cont-sec {
+    padding-right: 0;
+  }
+
+  .container .split-sec .img-sec img {
+    max-width: 100%;
+  }
+
+  .container .split-sec .cont-sec .btn {
+    text-align: left !important;
+    padding: 0;
+  }
+
+  .container .split-sec .cont-sec .btn button {
+    margin-bottom: 20px;
+  }
+
+  /* nav{
+		flex-direction: column;
+	} */
+
+  .container .cont-sec p {
+    padding-right: 0px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+
+  ul li a {
+    margin: 0 0 20px;
+    /*text-align: center;*/
+    font-size: 18px;
+  }
+  .right-nav-bar button {
+    padding: 10px 40px;
+    margin-top: 0px;
+  }
+
+  .navbar-toggle {
+    border-color: #018dca !important;
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #018dca !important;
+  }
+}
+
+/* ========================== Footer CSS =================== */
+
+.flex-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: left;
+}
+
+.f1 {
+  background-color: transparent;
+
+  flex: 20%;
+}
+
+.f2 {
+  background-color: transparent;
+  text-align: left;
+  flex: 40%;
+  padding-left: 1rem;
+}
+.f3 {
+  background-color: transparent;
+  text-align: left;
+  flex: 40%;
+  padding-left: 1rem;
+}
+.f4 {
+  background-color: transparent;
+
+  flex: 10%;
+}
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .f1 {
+    flex: 0%;
+  }
+}
+
+.flex-container {
+  padding: 50px 0;
+
+  color: white;
+  background-color: #00688b;
+}
+
+.flex-container h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.flex-container ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.flex-container ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.flex-container ul a:hover {
+  opacity: 1;
+}
+
+.flex-container.item.social {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .flex-container .item {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-container .item.social {
+    text-align: left;
+  }
+}
+
+.flex-container .item.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 2rem;
+  margin-top: 2px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.flex-container .item.social > a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .flex-container .item.social > a {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .flex-container .item.social > a {
+    margin-top: 10px;
+  }
+}
+
+.flex-container .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.liststy {
+  font-size: medium;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2rem;
+}
+.liststy1 {
+  font-size: medium;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2rem;
+}
+.liststy1:hover {
+  color: black;
+}
+.liststy:hover {
+  color: black;
+}
+
+.FCpy {
+  display: flex;
+  flex-wrap: wraps;
+  justify-content: center;
+  max-width: 100%;
+  background-color: #00688b;
+  color: white;
+  text-align: center;
+  float: center;
+  font-size: medium;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+.koko {
+  color: white;
+}
+/* 
+========================== Footer CSS  ENDs=================== */
